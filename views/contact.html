@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — MadeInCebu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../styles/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-mcebu fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-mcebu" href="index.html">Made<span>In</span>Cebu</a>
+      <button class="navbar-toggler navbar-toggler-mcebu" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="suppliers.html">Suppliers</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order-status.html">Track Order</a></li>
+          <li class="nav-item ms-lg-2"><a class="nav-link cart-btn" href="#" id="cartToggle"><i class="bi bi-basket2-fill"></i> Yellow Basket <span class="cart-badge" id="cartBadge">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header"><h5><i class="bi bi-basket2-fill" style="color:var(--primary)"></i> Yellow <span>Basket</span></h5><button class="cart-close-btn" id="cartClose"><i class="bi bi-x-lg"></i></button></div>
+    <div class="cart-drawer-body" id="cartBody"><div class="cart-empty-msg" id="cartEmpty"><i class="bi bi-basket"></i><p>Your basket is empty</p></div><div id="cartItems"></div></div>
+    <div class="cart-drawer-footer"><div class="cart-total-row"><span class="cart-total-label">Total</span><span class="cart-total-value" id="cartTotal">₱0.00</span></div><a href="checkout.html" class="btn btn-checkout" id="checkoutBtn" disabled>Proceed to Checkout</a></div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h1>Get in <span class="text-gradient">Touch</span></h1>
+    <p>Questions about orders, sizing, or brand partnerships? Let us know.</p>
+  </section>
+
+  <!-- CONTACT CONTENT -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        
+        <!-- Contact Details -->
+        <div class="col-lg-5">
+          <h3 class="mb-4" style="font-family:var(--font-heading);font-weight:700">Contact Details</h3>
+          <p class="text-secondary mb-5">We’re here to help and answer any question you might have. We look forward to hearing from you.</p>
+
+          <div class="d-flex align-items-center mb-4">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">Email</h6>
+              <a href="mailto:hello@madeincebu.ph" class="text-secondary" style="font-size:0.9rem">hello@madeincebu.ph</a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-4">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">Phone</h6>
+              <a href="tel:+639171234567" class="text-secondary" style="font-size:0.9rem">+63 917 123 4567</a>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center mb-5">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="ms-3">
+              <h6 class="mb-0 fw-bold">HQ Office</h6>
+              <span class="text-secondary" style="font-size:0.9rem">IT Park, Lahug<br>Cebu City, 6000 Philippines</span>
+            </div>
+          </div>
+
+          <h5 class="fw-bold mb-3">Follow Us</h5>
+          <div class="d-flex gap-3">
+            <a href="#" class="btn btn-outline-mcebu" style="padding:10px 14px"><i class="bi bi-facebook m-0"></i></a>
+            <a href="#" class="btn btn-outline-mcebu" style="padding:10px 14px"><i class="bi bi-instagram m-0"></i></a>
+            <a href="#" class="btn btn-outline-mcebu" style="padding:10px 14px"><i class="bi bi-twitter-x m-0"></i></a>
+            <a href="#" class="btn btn-outline-mcebu" style="padding:10px 14px"><i class="bi bi-tiktok m-0"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-7">
+          <div class="contact-card">
+            <h4 class="mb-4 fw-bold">Send us a Message</h4>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label-dark">Your Name</label>
+                  <input type="text" class="form-control form-control-dark" id="contactName" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label-dark">Your Email</label>
+                  <input type="email" class="form-control form-control-dark" id="contactEmail" required>
+                </div>
+                <div class="col-12">
+                  <label class="form-label-dark">Subject</label>
+                  <select class="form-select form-control-dark" id="contactSubject" required>
+                    <option value="">Select a topic...</option>
+                    <option value="order">Order Inquiry</option>
+                    <option value="return">Returns & Exchanges</option>
+                    <option value="partnership">Brand Partnership</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label class="form-label-dark">Message</label>
+                  <textarea class="form-control form-control-dark" id="contactMessage" rows="5" required></textarea>
+                </div>
+                <div class="col-12 mt-4">
+                  <button type="submit" class="btn btn-primary-mcebu w-100" style="padding:16px"><i class="bi bi-send-fill me-2"></i>Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP PLACEHOLDER -->
+  <section class="mt-4" style="height:400px; background:var(--bg-dark); position:relative; overflow:hidden">
+    <div class="position-absolute top-50 start-50 translate-middle text-center" style="z-index:2">
+      <div style="width:60px;height:60px;border-radius:50%;background:rgba(245,166,35,0.2);color:var(--primary);display:flex;align-items:center;justify-content:center;margin:0 auto 10px;font-size:1.5rem">
+        <i class="bi bi-geo-alt-fill"></i>
+      </div>
+      <h5 class="fw-bold">MadeInCebu HQ</h5>
+      <p class="text-secondary small">Cebu IT Park, Lahug</p>
+    </div>
+    <!-- Visual abstract map pattern -->
+    <div style="position:absolute;inset:0;opacity:0.05;background-image:linear-gradient(var(--border-color) 1px, transparent 1px), linear-gradient(90deg, var(--border-color) 1px, transparent 1px);background-size:40px 40px;"></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-mcebu">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 MadeInCebu. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="toast-mcebu" id="toastNotif"><i class="bi bi-check-circle-fill"></i> <span id="toastMsg"></span></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      setTimeout(() => {
+        showToast('Message sent successfully. We will get back to you shortly.');
+        e.target.reset();
+      }, 500);
+    });
+  </script>
+</body>
+</html>

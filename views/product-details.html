@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details — MadeInCebu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../styles/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-mcebu fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-mcebu" href="index.html">Made<span>In</span>Cebu</a>
+      <button class="navbar-toggler navbar-toggler-mcebu" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="suppliers.html">Suppliers</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order-status.html">Track Order</a></li>
+          <li class="nav-item ms-lg-2"><a class="nav-link cart-btn" href="#" id="cartToggle"><i class="bi bi-basket2-fill"></i> Yellow Basket <span class="cart-badge" id="cartBadge">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header"><h5><i class="bi bi-basket2-fill" style="color:var(--primary)"></i> Yellow <span>Basket</span></h5><button class="cart-close-btn" id="cartClose"><i class="bi bi-x-lg"></i></button></div>
+    <div class="cart-drawer-body" id="cartBody"><div class="cart-empty-msg" id="cartEmpty"><i class="bi bi-basket"></i><p>Your basket is empty</p></div><div id="cartItems"></div></div>
+    <div class="cart-drawer-footer"><div class="cart-total-row"><span class="cart-total-label">Total</span><span class="cart-total-value" id="cartTotal">₱0.00</span></div><a href="checkout.html" class="btn btn-checkout" id="checkoutBtn" disabled>Proceed to Checkout</a></div>
+  </div>
+
+  <!-- PRODUCT DETAIL -->
+  <section class="section-padding" style="padding-top:120px">
+    <div class="container">
+      <nav aria-label="breadcrumb" class="mb-4">
+        <ol class="breadcrumb" style="font-size:0.85rem">
+          <li class="breadcrumb-item"><a href="index.html" style="color:var(--text-muted)">Home</a></li>
+          <li class="breadcrumb-item"><a href="products.html" style="color:var(--text-muted)">Products</a></li>
+          <li class="breadcrumb-item active text-secondary" id="breadcrumbName">Loading...</li>
+        </ol>
+      </nav>
+      <div class="row g-5" id="productDetail">
+        <div class="col-lg-6">
+          <img src="" alt="" class="detail-img" id="detailImg">
+        </div>
+        <div class="col-lg-6">
+          <span class="detail-brand" id="detailBrand"></span>
+          <h1 class="detail-name" id="detailName"></h1>
+          <div class="detail-price" id="detailPrice"></div>
+          <div id="detailStockBadge" class="mt-2"></div>
+          <p class="detail-desc" id="detailDesc"></p>
+
+          <!-- Size Selector -->
+          <div class="mb-3" id="sizeWrap">
+            <label class="form-label-dark">Select Size</label>
+            <div class="d-flex gap-2 flex-wrap" id="sizeButtons"></div>
+          </div>
+
+          <!-- Specs -->
+          <dl class="detail-specs" id="detailSpecs"></dl>
+
+          <button class="btn btn-primary-mcebu w-100 mt-3" id="detailAddCart" style="padding:16px">
+            <i class="bi bi-basket2-fill me-2"></i>Add to Yellow Basket
+          </button>
+
+          <a href="" class="btn btn-outline-mcebu w-100 mt-2 btn-sm-mcebu" id="detailLink" target="_blank">
+            <i class="bi bi-box-arrow-up-right me-1"></i>View on Brand Site
+          </a>
+        </div>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="mt-5 pt-4" style="border-top:1px solid var(--border-color)">
+        <h3 class="section-title mb-4">Customer <span class="text-gradient">Reviews</span></h3>
+        <div id="reviewsList"></div>
+
+        <div class="checkout-card mt-4">
+          <h5><i class="bi bi-chat-dots-fill me-2" style="color:var(--primary)"></i>Leave a Review</h5>
+          <form id="reviewForm">
+            <div class="row g-3">
+              <div class="col-md-6"><input type="text" class="form-control form-control-dark" id="reviewName" placeholder="Your Name" required></div>
+              <div class="col-md-6">
+                <select class="form-select form-control-dark" id="reviewRating" required>
+                  <option value="">Select Rating</option>
+                  <option value="5">★★★★★ Excellent</option>
+                  <option value="4">★★★★☆ Good</option>
+                  <option value="3">★★★☆☆ Average</option>
+                  <option value="2">★★☆☆☆ Below Average</option>
+                  <option value="1">★☆☆☆☆ Poor</option>
+                </select>
+              </div>
+              <div class="col-12"><textarea class="form-control form-control-dark" id="reviewText" rows="3" placeholder="Write your feedback..." required></textarea></div>
+              <div class="col-12"><button type="submit" class="btn btn-primary-mcebu"><i class="bi bi-send-fill me-2"></i>Submit Review</button></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-mcebu">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4"><div class="footer-brand">Made<span>In</span>Cebu</div><p class="footer-text">Proudly Filipino streetwear.</p></div>
+        <div class="col-6 col-lg-2"><h6 class="footer-heading">Shop</h6><ul class="footer-links"><li><a href="products.html">All Products</a></li><li><a href="suppliers.html">Brands</a></li></ul></div>
+        <div class="col-6 col-lg-2"><h6 class="footer-heading">Company</h6><ul class="footer-links"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div class="col-6 col-lg-2"><h6 class="footer-heading">Support</h6><ul class="footer-links"><li><a href="order-status.html">Track Order</a></li></ul></div>
+        <div class="col-6 col-lg-2"><h6 class="footer-heading">Contact</h6><ul class="footer-links"><li><a href="mailto:hello@madeincebu.ph">hello@madeincebu.ph</a></li></ul></div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 MadeInCebu. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="toast-mcebu" id="toastNotif"><i class="bi bi-check-circle-fill"></i> <span id="toastMsg"></span></div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

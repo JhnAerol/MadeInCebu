@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — MadeInCebu</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="../styles/styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-mcebu fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-mcebu" href="index.html">Made<span>In</span>Cebu</a>
+      <button class="navbar-toggler navbar-toggler-mcebu" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" href="suppliers.html">Suppliers</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="order-status.html">Track Order</a></li>
+          <li class="nav-item ms-lg-2"><a class="nav-link cart-btn" href="#" id="cartToggle"><i class="bi bi-basket2-fill"></i> Yellow Basket <span class="cart-badge" id="cartBadge">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CART DRAWER -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header"><h5><i class="bi bi-basket2-fill" style="color:var(--primary)"></i> Yellow <span>Basket</span></h5><button class="cart-close-btn" id="cartClose"><i class="bi bi-x-lg"></i></button></div>
+    <div class="cart-drawer-body" id="cartBody"><div class="cart-empty-msg" id="cartEmpty"><i class="bi bi-basket"></i><p>Your basket is empty</p></div><div id="cartItems"></div></div>
+    <div class="cart-drawer-footer"><div class="cart-total-row"><span class="cart-total-label">Total</span><span class="cart-total-value" id="cartTotal">₱0.00</span></div><a href="checkout.html" class="btn btn-checkout" id="checkoutBtn" disabled>Proceed to Checkout</a></div>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <h1>About <span class="text-gradient">MadeInCebu</span></h1>
+    <p>Wear the Island. Own the Street.</p>
+  </section>
+
+  <!-- THE STORY -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="../images/cebu-island.png" alt="Cebu Island Aesthetic" class="img-fluid rounded-4 shadow-lg border border-dark">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="section-title mb-4">Our <span class="text-gradient">Story</span></h2>
+          <p class="text-secondary" style="font-size:1.05rem; line-height:1.8">
+            MadeInCebu is a curated clothing e-commerce platform dedicated exclusively to Cebu-inspired and homegrown streetwear brands. Born from a desire to elevate local craftsmanship to the global stage, we provide a unified storefront for the island’s finest apparel.
+          </p>
+          <p class="text-secondary" style="font-size:1.05rem; line-height:1.8">
+            From the deep historic roots celebrated by <strong>SuroyWear</strong> to the high-end architectural cuts by <strong>UA Worldwide</strong>, to the classic island lifestyle depicted by <strong>HGHR</strong> and <strong>Strap</strong> — our catalog is a love letter to Philippine streetwear culture. Our mission is simple: to make premium, locally-made fashion accessible to everyone, everywhere.
+          </p>
+          <div class="d-flex gap-4 mt-5">
+            <div><h3 class="fw-bold mb-1" style="color:var(--primary)">2026</h3><span class="text-muted" style="font-size:0.85rem;text-transform:uppercase;letter-spacing:1px">Established</span></div>
+            <div><h3 class="fw-bold mb-1" style="color:var(--primary)">5</h3><span class="text-muted" style="font-size:0.85rem;text-transform:uppercase;letter-spacing:1px">Partner Brands</span></div>
+            <div><h3 class="fw-bold mb-1" style="color:var(--primary)">100%</h3><span class="text-muted" style="font-size:0.85rem;text-transform:uppercase;letter-spacing:1px">Cebu Built</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE FOUNDERS -->
+  <section class="section-padding" style="background:var(--bg-card); border-top:1px solid var(--border-color)">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-title">The <span class="text-gradient">Founders</span></h2>
+        <p class="section-subtitle">The minds behind the marketplace</p>
+      </div>
+      <div class="row g-4 justify-content-center">
+        <!-- Exact text required by prompt -->
+        <div class="col-md-5 col-lg-4">
+          <div class="about-card">
+            <div class="founder-avatar">J</div>
+            <h4 class="mb-1 fw-bold">Juan Dela Cruz</h4>
+            <p class="text-primary fw-semibold mb-3">Co-Founder</p>
+            <p class="text-secondary" style="font-size:0.9rem">Spearheading brand partnerships and operations, ensuring that the best local talents find their home on the platform.</p>
+          </div>
+        </div>
+        <div class="col-md-5 col-lg-4">
+          <div class="about-card">
+            <div class="founder-avatar" style="background:linear-gradient(135deg, var(--info), #8b5cf6)">J</div>
+            <h4 class="mb-1 fw-bold">John Smith</h4>
+            <p class="text-primary fw-semibold mb-3">Co-Founder</p>
+            <p class="text-secondary" style="font-size:0.9rem">Leading technology and customer experience. Architecting the digital storefront to make browsing as smooth as the fabrics we sell.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE PRODUCTS -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h2 class="section-title mb-4">About the <span class="text-gradient">Products</span></h2>
+          <p class="text-secondary" style="font-size:1.1rem; line-height:1.7">
+            Every shirt and fashion piece on our platform represents the pinnacle of local manufacturing. We feature heavy 300GSM CVC fabrics that hold structural drapery, 100% hypoallergenic organic cotton for tropical comfort, and premium French terries with high-density ribbing. 
+          </p>
+          <p class="text-secondary" style="font-size:1.1rem; line-height:1.7">
+            The brands we carry don't just print shirts — they engineer them. Whether you're looking for an oversized, box-fit silhouette, a clean graphic tee with high-definition silk screening, or an everyday essential, you'll find clothes built to last through the wash, the weather, and the trends.
+          </p>
+          <a href="products.html" class="btn btn-primary-mcebu mt-4"><i class="bi bi-shop me-2"></i>Browse the Collection</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-mcebu">
+    <div class="container">
+      <div class="footer-bottom">&copy; 2026 MadeInCebu. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/cart.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>
