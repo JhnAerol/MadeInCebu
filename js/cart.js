@@ -1,4 +1,4 @@
-﻿/* cart.js - Yellow Basket Logic */
+/* cart.js - Yellow Basket Logic */
 
 let cart = JSON.parse(localStorage.getItem('mcebu_cart')) || [];
 
@@ -210,8 +210,8 @@ function renderCheckoutItems() {
 
   if (cart.length === 0) {
     container.innerHTML = `<p class="text-secondary">Your basket is empty. <a href="products.html">Browse products</a>.</p>`;
-    if (subtotalEl) subtotalEl.innerText = 'â‚±0.00';
-    if (totalEl) totalEl.innerText = 'â‚±0.00';
+    if (subtotalEl) subtotalEl.innerText = '₱0.00';
+    if (totalEl) totalEl.innerText = '₱0.00';
     if (placeOrderBtn) placeOrderBtn.disabled = true;
     return;
   }
@@ -226,9 +226,9 @@ function renderCheckoutItems() {
       </div>
       <div class="flex-grow-1">
         <h6 class="mb-1 fw-bold" style="font-size:0.9rem">${item.name}</h6>
-        <div class="text-secondary" style="font-size:0.75rem">${item.brand} â€¢ Size: ${item.size || 'Standard'}</div>
+        <div class="text-secondary" style="font-size:0.75rem">${item.brand} • Size: ${item.size || 'Standard'}</div>
         <div class="d-flex justify-content-between align-items-center mt-2">
-          <div class="fw-bold" style="color:var(--primary)">â‚±${(item.price * item.qty).toLocaleString('en-US', {minimumFractionDigits: 2})}</div>
+          <div class="fw-bold" style="color:var(--primary)">₱${(item.price * item.qty).toLocaleString('en-US', {minimumFractionDigits: 2})}</div>
           <button class="btn btn-sm btn-link text-danger p-0 text-decoration-none" onclick="removeFromCart(${index})" style="font-size:0.8rem">Remove</button>
         </div>
       </div>
@@ -236,7 +236,7 @@ function renderCheckoutItems() {
   `).join('');
 
   const totalPrice = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-  const formattedPrice = `â‚±${totalPrice.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+  const formattedPrice = `₱${totalPrice.toLocaleString('en-US', {minimumFractionDigits: 2})}`;
   
   if (subtotalEl) subtotalEl.innerText = formattedPrice;
   if (totalEl) totalEl.innerText = formattedPrice;
