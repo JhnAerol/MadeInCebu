@@ -1,4 +1,4 @@
-﻿/* app.js - Core application logic */
+/* app.js - Core application logic */
 
 let productsData = [];
 
@@ -271,7 +271,7 @@ function renderReviews(reviews, container) {
   
   container.innerHTML = reviews.map(r => {
     let stars = '';
-    for(let i=0; i<5; i++) stars += i < r.rating ? 'â˜…' : 'â˜†';
+    for(let i=0; i<5; i++) stars += i < r.rating ? '★' : '☆';
     
     return `
       <div class="review-card">
