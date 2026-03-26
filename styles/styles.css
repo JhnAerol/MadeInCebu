@@ -1,5 +1,5 @@
-/* ============================================
-   MadeInCebu — Design System
+﻿/* ============================================
+   MadeInUbec — Design System
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap');
@@ -1036,3 +1036,5 @@ h1, h2, h3, h4, h5, h6 {
   .page-header { padding: 80px 0 40px; }
   .page-header h1 { font-size: 1.8rem; }
 }
+
+

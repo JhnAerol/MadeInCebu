@@ -1,4 +1,4 @@
-[
+﻿[
   {
     "brand": "Penshoppe",
     "name": "Follow No Crowd Relaxed T-Shirt - Bone",
@@ -342,9 +342,9 @@
   },
   {
     "brand": "SuroyWear",
-    "name": "Island Series – 7641 Islands Tee",
+    "name": "Island Series â€“ 7641 Islands Tee",
     "price": "₱899.00",
-    "description": "A tribute to all 7,641 islands that shape the Philippine story. Wear the whole archipelago on your back. Designed in Cebu with coordinates 12.88°N 121.77°E — the geographic heart of the most extraordinary archipelago in the world.",
+    "description": "A tribute to all 7,641 islands that shape the Philippine story. Wear the whole archipelago on your back. Designed in Cebu with coordinates 12.88Â°N 121.77Â°E — the geographic heart of the most extraordinary archipelago in the world.",
     "details": {
       "fit": "True to size, unisex fit",
       "material": "100% Hypoallergenic Organic Cotton",
@@ -364,7 +364,7 @@
   },
   {
     "brand": "SuroyWear",
-    "name": "Island Series – Palawan Above & Below Tee",
+    "name": "Island Series â€“ Palawan Above & Below Tee",
     "price": "₱899.00",
     "description": "Above: jungle so thick it swallows the sky. Below: waters so clear they don't look real. The Palawan Above and Below Tee captures both worlds — the jungle canopy and the underwater garden. For every Filipino who has been to Palawan and left a piece of their heart there.",
     "details": {
@@ -386,7 +386,7 @@
   },
   {
     "brand": "SuroyWear",
-    "name": "Island Series – Cebu Whale Shark Tee",
+    "name": "Island Series â€“ Cebu Whale Shark Tee",
     "price": "₱899.00",
     "description": "Wander deeper. Swim freer. Wear the ocean. A bold tribute to Cebu's most magnificent marine encounter — the butanding (whale shark). Featuring a striking design that captures the scale and grace of the whale shark in motion.",
     "details": {
@@ -408,7 +408,7 @@
   },
   {
     "brand": "SuroyWear",
-    "name": "Statement Tee – Padayon Shirt",
+    "name": "Statement Tee â€“ Padayon Shirt",
     "price": "₱899.00",
     "description": "One word. A thousand quiet battles it has carried. Padayon — to continue, to push forward, to move even when everything in you wants to stop. This isn't just a shirt. It's the word you wear on the days you need it most. Designed in Cebu for those who keep going.",
     "details": {
@@ -430,9 +430,9 @@
   },
   {
     "brand": "SuroyWear",
-    "name": "Sinulog Vibes Tee – Choose Your Chant",
+    "name": "Sinulog Vibes Tee â€“ Choose Your Chant",
     "price": "₱899.00",
-    "description": "Celebration takes many forms. Some come to pray, some come to dance, some come to lose their voice with the crowd. Choose your Sinulog persona: Viva Pit Señor (Devotion), Prititit (Street Dance), Isyagit Ug Kusog (Street Party), or Sinulog (Classic). Pit Señor!",
+    "description": "Celebration takes many forms. Some come to pray, some come to dance, some come to lose their voice with the crowd. Choose your Sinulog persona: Viva Pit SeÃ±or (Devotion), Prititit (Street Dance), Isyagit Ug Kusog (Street Party), or Sinulog (Classic). Pit SeÃ±or!",
     "details": {
       "fit": "True to size, unisex fit (size up for oversized festival fit)",
       "material": "100% Hypoallergenic Organic Cotton",
@@ -443,7 +443,7 @@
         "Locally made, crafted in Cebu"
       ],
       "care": "Wash inside out, cold wash. Hang dry. Avoid ironing directly on print.",
-      "variants": ["VIVA PIT SEÑOR! (Devotion)", "PRITITIT! (Street Dance)", "ISYAGIT UG KUSOG! (Street Party)", "SINULOG (Classic)"],
+      "variants": ["VIVA PIT SEÃ‘OR! (Devotion)", "PRITITIT! (Street Dance)", "ISYAGIT UG KUSOG! (Street Party)", "SINULOG (Classic)"],
       "colors": ["White", "Midnight Black"],
       "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
       "madeIn": "Cebu, Philippines"
@@ -454,7 +454,7 @@
   },
   {
     "brand": "SuroyWear",
-    "name": "Statement Series – Puhon Tee",
+    "name": "Statement Series â€“ Puhon Tee",
     "price": "₱899.00",
     "description": "One word. A thousand promises. Puhon (pu-hon): Someday. In time. God willing. In Bisaya, this is not passive hope — it is active faith. The word you carry when the dream is still becoming. Designed in Cebu for those still becoming.",
     "details": {
@@ -568,3 +568,5 @@
     "stock": 52
   }
 ]
+
+

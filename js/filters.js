@@ -1,4 +1,4 @@
-/* filters.js - Product filtering and sorting logic */
+﻿/* filters.js - Product filtering and sorting logic */
 
 // Expose main init function
 window.initProducts = initProducts;
@@ -145,3 +145,5 @@ function runFilters() {
     if (countDisplay) countDisplay.innerText = `Showing ${filteredProducts.length} results`;
   }
 }
+
+

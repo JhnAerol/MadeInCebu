@@ -1,4 +1,4 @@
-/* app.js - Core application logic */
+﻿/* app.js - Core application logic */
 
 let productsData = [];
 
@@ -124,7 +124,7 @@ function initProductDetail() {
 
   const product = productsData[productId];
   
-  document.title = `${product.name} — MadeInCebu`;
+  document.title = `${product.name} — MadeInUbec`;
   document.getElementById('breadcrumbName').innerText = product.name;
   
   const imgEl = document.getElementById('detailImg');
@@ -271,7 +271,7 @@ function renderReviews(reviews, container) {
   
   container.innerHTML = reviews.map(r => {
     let stars = '';
-    for(let i=0; i<5; i++) stars += i < r.rating ? '★' : '☆';
+    for(let i=0; i<5; i++) stars += i < r.rating ? 'â˜…' : 'â˜†';
     
     return `
       <div class="review-card">
@@ -289,3 +289,5 @@ function renderReviews(reviews, container) {
 
 // Start application
 document.addEventListener('DOMContentLoaded', fetchProducts);
+
+
