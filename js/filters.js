@@ -11,7 +11,7 @@ function initProducts() {
 
   // 1. Initial Render (with default data)
   filteredProducts = [...productsData];
-  
+
   // 2. Setup Filter Inputs
   const brandCheckboxes = document.querySelectorAll('.brand-filter');
   const priceRange = document.getElementById('priceRange');
@@ -26,7 +26,7 @@ function initProducts() {
     const cb = document.querySelector(`.brand-filter[value="${initialBrand}"]`);
     if (cb) cb.checked = true;
   }
-  
+
   const initialQuery = urlParams.get('q');
   if (initialQuery && searchInput) {
     searchInput.value = initialQuery;
@@ -34,7 +34,7 @@ function initProducts() {
 
   // 3. Attach Listeners
   brandCheckboxes.forEach(cb => cb.addEventListener('change', runFilters));
-  
+
   if (priceRange) {
     const priceDisplay = document.getElementById('priceDisplay');
     priceRange.addEventListener('input', (e) => {
@@ -51,12 +51,12 @@ function initProducts() {
     clearBtn.addEventListener('click', () => {
       brandCheckboxes.forEach(cb => cb.checked = false);
       if (priceRange) {
-        priceRange.value = 2000;
-        document.getElementById('priceDisplay').innerText = `₱2,000`;
+        priceRange.value = 5000;
+        document.getElementById('priceDisplay').innerText = `₱5,000`;
       }
       if (searchInput) searchInput.value = '';
       if (sortSelect) sortSelect.value = 'default';
-      
+
       // Remove URL params cleanly without reload
       window.history.replaceState({}, '', 'products.html');
       runFilters();
@@ -75,31 +75,31 @@ function initProducts() {
 function runFilters() {
   const grid = document.getElementById('productGrid');
   const countDisplay = document.getElementById('resultCount');
-  
+
   // Get active filters
   const selectedBrands = Array.from(document.querySelectorAll('.brand-filter:checked')).map(cb => cb.value);
-  
+
   const priceRangeEl = document.getElementById('priceRange');
   const maxPrice = priceRangeEl ? parseInt(priceRangeEl.value) : 999999;
-  
+
   const searchInput = document.getElementById('searchInput');
   const query = searchInput ? searchInput.value.toLowerCase().trim() : '';
-  
+
   const sortVal = document.getElementById('sortSelect')?.value || 'default';
 
   // Apply Filters
   filteredProducts = productsData.filter(product => {
     const priceNum = parseFloat(product.price.replace(/[^0-9.]/g, ''));
-    
+
     // Brand Check
     const matchBrand = selectedBrands.length === 0 || selectedBrands.includes(product.brand);
-    
+
     // Price Check
     const matchPrice = priceNum <= maxPrice;
-    
+
     // Search Check (Name, description, or brand)
-    const matchSearch = query === '' 
-      || product.name.toLowerCase().includes(query) 
+    const matchSearch = query === ''
+      || product.name.toLowerCase().includes(query)
       || product.brand.toLowerCase().includes(query)
       || product.description.toLowerCase().includes(query);
 
@@ -141,7 +141,7 @@ function runFilters() {
       const originalIndex = productsData.findIndex(p => p.name === product.name);
       return typeof generateProductCard === 'function' ? generateProductCard(product, originalIndex) : '';
     }).join('');
-    
+
     if (countDisplay) countDisplay.innerText = `Showing ${filteredProducts.length} results`;
   }
 }

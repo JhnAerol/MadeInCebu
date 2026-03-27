@@ -108,9 +108,13 @@ function initHome() {
   const featuredContainer = document.getElementById('featuredProducts');
   if(!featuredContainer) return;
 
-  // Grab 6 random/featured products (or first 6 for simplicity)
-  const featured = productsData.slice(0, 6);
-  featuredContainer.innerHTML = featured.map((p, i) => generateProductCard(p, i)).join('');
+  // Grab the 6 most recently added products
+  let featuredHTML = '';
+  const total = productsData.length;
+  for (let i = total - 1; i >= Math.max(0, total - 6); i--) {
+    featuredHTML += generateProductCard(productsData[i], i);
+  }
+  featuredContainer.innerHTML = featuredHTML;
 }
 
 function initProductDetail() {

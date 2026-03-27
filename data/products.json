@@ -566,6 +566,81 @@
     "link": "https://www.hghrclss.life/products/ganja",
     "image": "https://cdn.shopify.com/s/files/1/0619/8054/1134/products/HGHRgnja.jpg?v=1664362417",
     "stock": 52
+  },
+  {
+    "brand": "UA",
+    "name": "UA Prime FCO Sweatpants - Black",
+    "price": "₱2,999.00",
+    "description": "Premium fleece, cursive FCO detailing, UA label. Dark collector luxury streetwear bottoms. Complete the set.",
+    "details": {
+      "fit": "Standard",
+      "fabric": "Premium Fleece",
+      "features": ["Cursive FCO detailing"],
+      "madeIn": "Philippines"
+    },
+    "link": "https://www.uaworldwide.com/products/ua-prime-f-c-o-sweat-pants-black",
+    "image": "https://www.uaworldwide.com/cdn/shop/files/ua-fco-pants-front-view-3.png?v=1773587936",
+    "stock": 10
+  },
+  {
+    "brand": "UA",
+    "name": "UA Prime FCO Sweatpants - White",
+    "price": "₱2,999.00",
+    "description": "Premium fleece, cursive FCO branding, UA signature label. Collector's luxury streetwear bottom.",
+    "details": {
+      "fit": "Standard",
+      "fabric": "Premium Fleece",
+      "features": ["Cursive FCO branding"],
+      "madeIn": "Philippines"
+    },
+    "link": "https://www.uaworldwide.com/products/ua-prime-f-c-o-sweat-pants-white",
+    "image": "https://www.uaworldwide.com/cdn/shop/files/ua-fco-pants-front-view-2.png?v=1773587936",
+    "stock": 10
+  },
+  {
+    "brand": "UA",
+    "name": "UA Prime FCO Hoodie - Black",
+    "price": "₱3,999.00",
+    "description": "Premium fleece, cursive FCO detailing, UA signature label. Dark collector's luxury streetwear hoodie.",
+    "details": {
+      "fit": "Relaxed drop-shoulder cut",
+      "fabric": "Premium heavyweight fleece",
+      "features": ["Cursive FCO embroidery", "Rubber-patched UA logo"],
+      "madeIn": "Philippines"
+    },
+    "link": "https://www.uaworldwide.com/products/ua-prime-hoodie-f-c-o-black",
+    "image": "https://www.uaworldwide.com/cdn/shop/files/ua-fco-black-hoodie-front-view.png?v=1773587937",
+    "stock": 10
+  },
+  {
+    "brand": "Penshoppe",
+    "name": "Wide Fit Cargo Jeans - Medieval Blue",
+    "price": "₱1,399.00",
+    "description": "Wide Fit Cargo Jeans with cargo pockets, made from twill weave denim.",
+    "details": {
+      "fit": "Wide Leg",
+      "fabric": "Twill Weave (Denim)",
+      "material": "100% Cotton",
+      "waistHeight": "High Waist"
+    },
+    "link": "https://www.penshoppe.com/products/wide-fit-cargo-jeans-992240-medieval-blue",
+    "image": "https://www.penshoppe.com/cdn/shop/files/992240-Medieval_Blue_3.jpg?v=1770689452",
+    "stock": 10
+  },
+  {
+    "brand": "Penshoppe",
+    "name": "Slim Fit 5-Pocket Jeans - Black",
+    "price": "₱1,299.00",
+    "description": "Slim fit 5-pocket jeans featuring a zipper design, mid waist, and stretchable twill weave denim.",
+    "details": {
+      "fit": "Slim",
+      "fabric": "Twill Weave (Denim)",
+      "material": "71% Cotton 22% Polyester 5% Rayon 2% Spandex",
+      "waistHeight": "Mid Waist"
+    },
+    "link": "https://www.penshoppe.com/products/slim-fit-5-pocket-jeans-991599-black",
+    "image": "https://www.penshoppe.com/cdn/shop/files/991599-Black_4.jpg?v=1770346707",
+    "stock": 10
   }
 ]
 
