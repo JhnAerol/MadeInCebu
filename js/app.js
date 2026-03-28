@@ -23,7 +23,12 @@ window.addEventListener('scroll', () => {
 
 // Load products
 async function fetchProducts() {
+  // Show skeletons immediately
+  showSkeletons();
   try {
+    // Artificial delay for demo/skeleton visibility (as requested)
+    await new Promise(resolve => setTimeout(resolve, 2000));
+
     const res = await fetch('../data/products.json');
     if(!res.ok) throw new Error('Failed to load products');
     productsData = await res.json();
@@ -85,6 +90,23 @@ function generateProductCard(product, index) {
   `;
 }
 
+// Generate a skeleton product card HTML
+function generateSkeletonCard() {
+  return `
+    <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
+      <div class="product-card w-100 border-0" style="background:transparent shadow:none">
+        <div class="skeleton skeleton-img"></div>
+        <div class="product-card-body p-0">
+          <div class="skeleton skeleton-text short"></div>
+          <div class="skeleton skeleton-text medium"></div>
+          <div class="skeleton skeleton-text short"></div>
+          <div class="skeleton skeleton-btn"></div>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
 // Initialize Active Page
 function initPage() {
   const path = window.location.pathname;
@@ -101,6 +123,19 @@ function initPage() {
 
   // Global Cart initialization
   if(window.initCartSystem) window.initCartSystem();
+}
+
+function showSkeletons() {
+  const featured = document.getElementById('featuredProducts');
+  const grid = document.getElementById('productGrid');
+  const skeletonHTML = Array(6).fill(generateSkeletonCard()).join('');
+  
+  if (featured) featured.innerHTML = skeletonHTML;
+  if (grid) {
+    grid.innerHTML = skeletonHTML;
+    const resultCount = document.getElementById('resultCount');
+    if (resultCount) resultCount.innerText = 'Searching for finest products...';
+  }
 }
 
 function initHome() {
