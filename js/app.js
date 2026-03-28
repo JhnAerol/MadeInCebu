@@ -39,8 +39,7 @@ async function fetchProducts() {
     initPage();
   } catch (error) {
     console.error('Error fetching products:', error);
-    // If running without a server, fallback to empty array or dummy data
-    // For GitHub pages, relative path works perfectly.
+    alert('Products could not be loaded. Please ensure you are running this through a web server (like Live Server in VS Code) and not just opening the file directly.');
   }
 }
 
@@ -145,7 +144,7 @@ function initProductDetail() {
   }
   document.getElementById('detailPrice').innerHTML = priceHTML;
   document.getElementById('detailDesc').innerText = product.description;
-  document.getElementById('detailLink').href = product.link;
+
 
   // Stock badge
   let stockBadge = '';
