@@ -3,10 +3,10 @@
 let productsData = [];
 
 // Global Toast function
-window.showToast = function(msg) {
+window.showToast = function (msg) {
   const toast = document.getElementById('toastNotif');
   const msgEl = document.getElementById('toastMsg');
-  if(!toast || !msgEl) return;
+  if (!toast || !msgEl) return;
   msgEl.innerText = msg;
   toast.classList.add('show');
   setTimeout(() => toast.classList.remove('show'), 3000);
@@ -15,8 +15,8 @@ window.showToast = function(msg) {
 // Navbar Scroll Effect
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('mainNav');
-  if(nav) {
-    if(window.scrollY > 20) nav.classList.add('scrolled');
+  if (nav) {
+    if (window.scrollY > 20) nav.classList.add('scrolled');
     else nav.classList.remove('scrolled');
   }
 });
@@ -26,11 +26,10 @@ async function fetchProducts() {
   // Show skeletons immediately
   showSkeletons();
   try {
-    // Artificial delay for demo/skeleton visibility (as requested)
     await new Promise(resolve => setTimeout(resolve, 2000));
 
     const res = await fetch('../data/products.json');
-    if(!res.ok) throw new Error('Failed to load products');
+    if (!res.ok) throw new Error('Failed to load products');
     productsData = await res.json();
 
     // Decrease stock based on local purchases
@@ -51,8 +50,8 @@ async function fetchProducts() {
 // Generate a product card HTML
 function generateProductCard(product, index) {
   // Use index as ID if no ID provided in JSON
-  const productId = index; 
-  
+  const productId = index;
+
   let stockBadge = '';
   if (product.stock > 20) {
     stockBadge = `<span class="badge-stock badge-in-stock">In Stock</span>`;
@@ -62,9 +61,9 @@ function generateProductCard(product, index) {
     stockBadge = `<span class="badge-stock badge-out-stock">Out of Stock</span>`;
   }
 
-  let priceHTML = `₱${parseFloat(product.price.replace(/[^0-9.]/g, '')).toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+  let priceHTML = `₱${parseFloat(product.price.replace(/[^0-9.]/g, '')).toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
   if (product.originalPrice) {
-    priceHTML += ` <span class="original-price">₱${parseFloat(product.originalPrice.replace(/[^0-9.]/g, '')).toLocaleString('en-US', {minimumFractionDigits: 2})}</span>`;
+    priceHTML += ` <span class="original-price">₱${parseFloat(product.originalPrice.replace(/[^0-9.]/g, '')).toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>`;
     stockBadge = `<span class="badge-stock badge-low-stock" style="background:var(--accent);color:#fff">SALE</span> ` + stockBadge;
   }
 
@@ -107,6 +106,27 @@ function generateSkeletonCard() {
   `;
 }
 
+// Generate skeleton for product detail page
+function generateDetailSkeleton() {
+  return `
+    <div class="col-lg-6">
+      <div class="skeleton skeleton-img" style="aspect-ratio: 1; height: auto;"></div>
+    </div>
+    <div class="col-lg-6">
+      <div class="skeleton skeleton-text short" style="height: 20px; width: 30%; margin-bottom: 15px;"></div>
+      <div class="skeleton skeleton-text" style="height: 48px; margin-bottom: 20px;"></div>
+      <div class="skeleton skeleton-text medium" style="height: 32px; margin-bottom: 30px;"></div>
+      <div class="skeleton skeleton-text" style="height: 100px; margin-bottom: 30px;"></div>
+      <div class="d-flex gap-2 mb-4">
+        <div class="skeleton" style="width: 60px; height: 40px; border-radius: 8px;"></div>
+        <div class="skeleton" style="width: 60px; height: 40px; border-radius: 8px;"></div>
+        <div class="skeleton" style="width: 60px; height: 40px; border-radius: 8px;"></div>
+      </div>
+      <div class="skeleton skeleton-btn" style="height: 56px;"></div>
+    </div>
+  `;
+}
+
 // Initialize Active Page
 function initPage() {
   const path = window.location.pathname;
@@ -114,7 +134,7 @@ function initPage() {
   if (path.includes('index.html') || path.endsWith('/')) {
     initHome();
   } else if (path.includes('products.html')) {
-    if(window.initProducts) window.initProducts(); // defined in filters.js/search.js
+    if (window.initProducts) window.initProducts(); // defined in filters.js/search.js
   } else if (path.includes('product-details.html')) {
     initProductDetail();
   } else if (path.includes('checkout.html')) {
@@ -122,25 +142,30 @@ function initPage() {
   }
 
   // Global Cart initialization
-  if(window.initCartSystem) window.initCartSystem();
+  if (window.initCartSystem) window.initCartSystem();
 }
 
 function showSkeletons() {
   const featured = document.getElementById('featuredProducts');
   const grid = document.getElementById('productGrid');
+  const detail = document.getElementById('productDetail');
+
   const skeletonHTML = Array(6).fill(generateSkeletonCard()).join('');
-  
+
   if (featured) featured.innerHTML = skeletonHTML;
   if (grid) {
     grid.innerHTML = skeletonHTML;
     const resultCount = document.getElementById('resultCount');
     if (resultCount) resultCount.innerText = 'Searching for finest products...';
   }
+  if (detail) {
+    detail.innerHTML = generateDetailSkeleton();
+  }
 }
 
 function initHome() {
   const featuredContainer = document.getElementById('featuredProducts');
-  if(!featuredContainer) return;
+  if (!featuredContainer) return;
 
   // Grab the 6 most recently added products
   let featuredHTML = '';
@@ -154,32 +179,57 @@ function initHome() {
 function initProductDetail() {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = parseInt(urlParams.get('id'));
-  
+
+  const detailContainer = document.getElementById('productDetail');
+  if (!detailContainer) return;
+
   if (isNaN(productId) || productId < 0 || productId >= productsData.length) {
-    document.getElementById('productDetail').innerHTML = `<div class="col-12 text-center py-5"><h3>Product not found.</h3><a href="products.html" class="btn btn-primary-mcebu mt-3">Back to Shop</a></div>`;
+    detailContainer.innerHTML = `<div class="col-12 text-center py-5"><h3>Product not found.</h3><a href="products.html" class="btn btn-primary-mcebu mt-3">Back to Shop</a></div>`;
     return;
   }
 
   const product = productsData[productId];
-  
+
+  // Re-establish the correct layout before populating (clears the skeleton)
+  detailContainer.innerHTML = `
+    <div class="col-lg-6">
+      <img src="" alt="" class="detail-img" id="detailImg">
+    </div>
+    <div class="col-lg-6">
+      <span class="detail-brand" id="detailBrand"></span>
+      <h1 class="detail-name" id="detailName"></h1>
+      <div class="detail-price" id="detailPrice"></div>
+      <div id="detailStockBadge" class="mt-2"></div>
+      <p class="detail-desc" id="detailDesc"></p>
+      <div class="mb-3" id="sizeWrap">
+        <label class="form-label-dark">Select Size</label>
+        <div class="d-flex gap-2 flex-wrap" id="sizeButtons"></div>
+      </div>
+      <dl class="detail-specs" id="detailSpecs"></dl>
+      <button class="btn btn-primary-mcebu w-100 mt-3" id="detailAddCart" style="padding:16px">
+        <i class="bi bi-basket2-fill me-2"></i>Add to Yellow Basket
+      </button>
+    </div>
+  `;
+
   document.title = `${product.name} — MadeInUbec`;
   document.getElementById('breadcrumbName').innerText = product.name;
-  
+
   const imgEl = document.getElementById('detailImg');
   imgEl.src = product.image;
+  imgEl.alt = product.name;
   imgEl.onerror = () => { imgEl.src = 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800&q=80'; };
-  
+
   document.getElementById('detailBrand').innerText = product.brand;
   document.getElementById('detailName').innerText = product.name;
-  
+
   // Price formatting
-  let priceHTML = `₱${parseFloat(product.price.replace(/[^0-9.]/g, '')).toLocaleString('en-US', {minimumFractionDigits: 2})}`;
+  let priceHTML = `₱${parseFloat(product.price.replace(/[^0-9.]/g, '')).toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
   if (product.originalPrice) {
-    priceHTML += ` <span class="original-price ms-2" style="font-size:1.2rem">₱${parseFloat(product.originalPrice.replace(/[^0-9.]/g, '')).toLocaleString('en-US', {minimumFractionDigits: 2})}</span>`;
+    priceHTML += ` <span class="original-price ms-2" style="font-size:1.2rem">₱${parseFloat(product.originalPrice.replace(/[^0-9.]/g, '')).toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>`;
   }
   document.getElementById('detailPrice').innerHTML = priceHTML;
   document.getElementById('detailDesc').innerText = product.description;
-
 
   // Stock badge
   let stockBadge = '';
@@ -204,7 +254,7 @@ function initProductDetail() {
       btn.className = `size-btn ${i === 0 ? 'active' : ''}`;
       btn.innerText = size;
       if (i === 0) selectedSize = size;
-      
+
       btn.onclick = () => {
         document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
@@ -218,7 +268,7 @@ function initProductDetail() {
 
   // Add to Cart Action
   document.getElementById('detailAddCart').onclick = () => {
-    if(window.addToCart) {
+    if (window.addToCart) {
       window.addToCart(productId, 1, selectedSize);
     }
   };
@@ -228,10 +278,10 @@ function initProductDetail() {
   if (product.details) {
     for (const [key, val] of Object.entries(product.details)) {
       if (key === 'sizes' || key === 'features') continue; // Handled separately or skipped
-      
+
       let formattedKey = key.replace(/([A-Z])/g, ' $1').replace(/^./, str => str.toUpperCase());
       let value = Array.isArray(val) ? val.join(', ') : val;
-      
+
       specsDl.innerHTML += `
         <div class="row mb-2 pb-2" style="border-bottom:1px solid var(--border-color)">
           <dt class="col-sm-4">${formattedKey}</dt>
@@ -239,7 +289,7 @@ function initProductDetail() {
         </div>
       `;
     }
-    
+
     if (product.details.features && Array.isArray(product.details.features)) {
       specsDl.innerHTML += `
         <div class="row mt-3">
@@ -279,7 +329,7 @@ function loadReviews(productId) {
 
   // Review Form Submit
   const form = document.getElementById('reviewForm');
-  if(form) {
+  if (form) {
     form.onsubmit = (e) => {
       e.preventDefault();
       const nName = document.getElementById('reviewName').value;
@@ -289,7 +339,7 @@ function loadReviews(productId) {
       reviews.unshift({
         name: nName,
         rating: nRating,
-        date: new Date().toLocaleDateString('en-US', {month: 'short', day: 'numeric', year: 'numeric'}),
+        date: new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }),
         text: nText
       });
 
@@ -306,11 +356,11 @@ function renderReviews(reviews, container) {
     container.innerHTML = `<p class="text-secondary">No reviews yet. Be the first to review!</p>`;
     return;
   }
-  
+
   container.innerHTML = reviews.map(r => {
     let stars = '';
-    for(let i=0; i<5; i++) stars += i < r.rating ? '★' : '☆';
-    
+    for (let i = 0; i < 5; i++) stars += i < r.rating ? '★' : '☆';
+
     return `
       <div class="review-card">
         <div class="d-flex justify-content-between mb-2">
