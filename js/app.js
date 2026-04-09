@@ -1,8 +1,8 @@
-/* app.js - Core application logic */
+
 
 let productsData = [];
 
-// Global Toast function
+
 window.showToast = function (msg) {
   const toast = document.getElementById('toastNotif');
   const msgEl = document.getElementById('toastMsg');
@@ -12,7 +12,7 @@ window.showToast = function (msg) {
   setTimeout(() => toast.classList.remove('show'), 3000);
 };
 
-// Navbar Scroll Effect
+
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('mainNav');
   if (nav) {
@@ -21,18 +21,20 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Load products
 async function fetchProducts() {
-  // Show skeletons immediately
   showSkeletons();
   try {
     await new Promise(resolve => setTimeout(resolve, 2000));
 
-    const res = await fetch('../data/products.json');
-    if (!res.ok) throw new Error('Failed to load products');
-    productsData = await res.json();
+    if (window.productsData && window.productsData.length > 0) {
+      productsData = window.productsData;
+    } else {
+      const res = await fetch('../data/products.json');
+      if (!res.ok) throw new Error('Failed to load products');
+      productsData = await res.json();
+    }
 
-    // Decrease stock based on local purchases
+
     const purchases = JSON.parse(localStorage.getItem('mcebu_purchases')) || {};
     productsData.forEach((product, idx) => {
       if (purchases[idx]) {
@@ -47,9 +49,9 @@ async function fetchProducts() {
   }
 }
 
-// Generate a product card HTML
+
 function generateProductCard(product, index) {
-  // Use index as ID if no ID provided in JSON
+
   const productId = index;
 
   let stockBadge = '';
@@ -89,7 +91,7 @@ function generateProductCard(product, index) {
   `;
 }
 
-// Generate a skeleton product card HTML
+
 function generateSkeletonCard() {
   return `
     <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
@@ -106,7 +108,7 @@ function generateSkeletonCard() {
   `;
 }
 
-// Generate skeleton for product detail page
+
 function generateDetailSkeleton() {
   return `
     <div class="col-lg-6">
@@ -127,7 +129,7 @@ function generateDetailSkeleton() {
   `;
 }
 
-// Initialize Active Page
+
 function initPage() {
   const path = window.location.pathname;
 
@@ -141,7 +143,7 @@ function initPage() {
     initCheckout();
   }
 
-  // Global Cart initialization
+
   if (window.initCartSystem) window.initCartSystem();
 }
 
@@ -167,7 +169,7 @@ function initHome() {
   const featuredContainer = document.getElementById('featuredProducts');
   if (!featuredContainer) return;
 
-  // Grab the 6 most recently added products
+
   let featuredHTML = '';
   const total = productsData.length;
   for (let i = total - 1; i >= Math.max(0, total - 6); i--) {
@@ -190,7 +192,7 @@ function initProductDetail() {
 
   const product = productsData[productId];
 
-  // Re-establish the correct layout before populating (clears the skeleton)
+
   detailContainer.innerHTML = `
     <div class="col-lg-6">
       <img src="" alt="" class="detail-img" id="detailImg">
@@ -223,7 +225,7 @@ function initProductDetail() {
   document.getElementById('detailBrand').innerText = product.brand;
   document.getElementById('detailName').innerText = product.name;
 
-  // Price formatting
+
   let priceHTML = `₱${parseFloat(product.price.replace(/[^0-9.]/g, '')).toLocaleString('en-US', { minimumFractionDigits: 2 })}`;
   if (product.originalPrice) {
     priceHTML += ` <span class="original-price ms-2" style="font-size:1.2rem">₱${parseFloat(product.originalPrice.replace(/[^0-9.]/g, '')).toLocaleString('en-US', { minimumFractionDigits: 2 })}</span>`;
@@ -231,7 +233,7 @@ function initProductDetail() {
   document.getElementById('detailPrice').innerHTML = priceHTML;
   document.getElementById('detailDesc').innerText = product.description;
 
-  // Stock badge
+
   let stockBadge = '';
   if (product.stock > 20) {
     stockBadge = `<span class="badge" style="background:rgba(34,197,94,0.15);color:var(--success)">In Stock</span>`;
@@ -244,7 +246,7 @@ function initProductDetail() {
   }
   document.getElementById('detailStockBadge').innerHTML = stockBadge;
 
-  // Size Selector
+
   let selectedSize = '';
   const sizes = product.details.sizes || [];
   if (sizes.length > 0) {
@@ -266,14 +268,14 @@ function initProductDetail() {
     document.getElementById('sizeWrap').style.display = 'none';
   }
 
-  // Add to Cart Action
+
   document.getElementById('detailAddCart').onclick = () => {
     if (window.addToCart) {
       window.addToCart(productId, 1, selectedSize);
     }
   };
 
-  // Specs List
+
   const specsDl = document.getElementById('detailSpecs');
   if (product.details) {
     for (const [key, val] of Object.entries(product.details)) {
@@ -304,7 +306,7 @@ function initProductDetail() {
     }
   }
 
-  // Reviews Loading
+
   loadReviews(productId);
 }
 
@@ -316,7 +318,7 @@ function loadReviews(productId) {
   if (reviewsJSON) {
     reviews = JSON.parse(reviewsJSON);
   } else {
-    // Generate dummy review if empty
+
     reviews = [{
       name: "Alex M.",
       rating: 5,
@@ -327,7 +329,7 @@ function loadReviews(productId) {
 
   renderReviews(reviews, reviewsList);
 
-  // Review Form Submit
+
   const form = document.getElementById('reviewForm');
   if (form) {
     form.onsubmit = (e) => {
@@ -375,7 +377,8 @@ function renderReviews(reviews, container) {
 }
 
 
-// Start application
+
 document.addEventListener('DOMContentLoaded', fetchProducts);
+
 
 

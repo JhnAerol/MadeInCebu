@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link href="../styles/styles.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
+
 <body>
 
-  <!-- NAVBAR -->
+
   <nav class="navbar navbar-expand-lg navbar-mcebu fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand navbar-brand-mcebu" href="index.html">Made<span>In</span>Ubec</a>
-      <button class="navbar-toggler navbar-toggler-mcebu" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
+      <button class="navbar-toggler navbar-toggler-mcebu" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navMenu"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse" id="navMenu">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-1">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -23,79 +27,103 @@
           <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
           <li class="nav-item"><a class="nav-link" href="order-status.html">Track Order</a></li>
-          <li class="nav-item ms-lg-2"><a class="nav-link cart-btn" href="#" id="cartToggle"><i class="bi bi-basket2-fill"></i> Yellow Basket <span class="cart-badge" id="cartBadge">0</span></a></li>
+          <li class="nav-item ms-lg-2"><a class="nav-link cart-btn" href="#" id="cartToggle"><i
+                class="bi bi-basket2-fill"></i> Yellow Basket <span class="cart-badge" id="cartBadge">0</span></a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- CART DRAWER -->
+
   <div class="cart-overlay" id="cartOverlay"></div>
   <div class="cart-drawer" id="cartDrawer">
-    <div class="cart-drawer-header"><h5><i class="bi bi-basket2-fill" style="color:var(--primary)"></i> Yellow <span>Basket</span></h5><button class="cart-close-btn" id="cartClose"><i class="bi bi-x-lg"></i></button></div>
-    <div class="cart-drawer-body" id="cartBody"><div class="cart-empty-msg" id="cartEmpty"><i class="bi bi-basket"></i><p>Your basket is empty</p></div><div id="cartItems"></div></div>
-    <div class="cart-drawer-footer"><div class="cart-total-row"><span class="cart-total-label">Total</span><span class="cart-total-value" id="cartTotal">₱0.00</span></div><a href="checkout.html" class="btn btn-checkout" id="checkoutBtn" disabled>Proceed to Checkout</a></div>
+    <div class="cart-drawer-header">
+      <h5><i class="bi bi-basket2-fill" style="color:var(--primary)"></i> Yellow <span>Basket</span></h5><button
+        class="cart-close-btn" id="cartClose"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <div class="cart-drawer-body" id="cartBody">
+      <div class="cart-empty-msg" id="cartEmpty"><i class="bi bi-basket"></i>
+        <p>Your basket is empty</p>
+      </div>
+      <div id="cartItems"></div>
+    </div>
+    <div class="cart-drawer-footer">
+      <div class="cart-total-row"><span class="cart-total-label">Total</span><span class="cart-total-value"
+          id="cartTotal">₱0.00</span></div><a href="checkout.html" class="btn btn-checkout" id="checkoutBtn"
+        disabled>Proceed to Checkout</a>
+    </div>
   </div>
 
-  <!-- PAGE HEADER -->
+
   <section class="page-header">
     <h1>Our <span class="text-gradient">Suppliers</span></h1>
     <p>Discover the 5 proud Cebuano and Philippine brands we carry</p>
   </section>
 
-  <!-- SUPPLIERS -->
+
   <section class="section-padding">
     <div class="container">
       <div class="row g-4 justify-content-center">
-        <!-- Craftclothing -->
+
         <div class="col-md-6 col-lg-4">
           <div class="supplier-card">
             <h3 class="supplier-logo">CRAFTCLOTHING</h3>
-            <p class="supplier-desc">A leading international casual wear brand with proud Filipino roots. Delivering premium interlock blends and structured graphic tees for definitive everyday essentials.</p>
-            <a href="products.html?brand=Craftclothing" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Craftclothing</a>
+            <p class="supplier-desc">A leading international casual wear brand with proud Filipino roots. Delivering
+              premium interlock blends and structured graphic tees for definitive everyday essentials.</p>
+            <a href="products.html?brand=Craftclothing" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop
+              Craftclothing</a>
           </div>
         </div>
 
-        <!-- Five Colors Apparel -->
+
         <div class="col-md-6 col-lg-4">
           <div class="supplier-card">
             <h3 class="supplier-logo" style="color:#f0f0f0">FIVE COLORS</h3>
-            <p class="supplier-desc">Elevating streetwear aesthetics. Producing heavyweight 350GSM Box Tees and French Terry cuts right in the heart of Cebu City. Simplicity done with a tactical edge.</p>
-            <a href="products.html?brand=Five Colors Apparel" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Five Colors Apparel</a>
+            <p class="supplier-desc">Elevating streetwear aesthetics. Producing heavyweight 350GSM Box Tees and French
+              Terry cuts right in the heart of Cebu City. Simplicity done with a tactical edge.</p>
+            <a href="products.html?brand=Five Colors Apparel" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Five
+              Colors Apparel</a>
           </div>
         </div>
 
-        <!-- Global Wear Manufacturing -->
+
         <div class="col-md-6 col-lg-4">
           <div class="supplier-card">
             <h3 class="supplier-logo" style="letter-spacing:4px">GLOBAL WEAR</h3>
-            <p class="supplier-desc">100% Cotton. Clean structure. Pure streetwear. Global Wear is a homegrown Cebu brand specializing in loose-fit logo tees that make an effortless statement.</p>
-            <a href="products.html?brand=Global Wear Manufacturing" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Global Wear</a>
+            <p class="supplier-desc">100% Cotton. Clean structure. Pure streetwear. Global Wear is a homegrown Cebu
+              brand specializing in loose-fit logo tees that make an effortless statement.</p>
+            <a href="products.html?brand=Global Wear Manufacturing"
+              class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Global Wear</a>
           </div>
         </div>
 
-        <!-- Lucas Garments -->
+
         <div class="col-md-6 col-lg-4">
           <div class="supplier-card">
             <h3 class="supplier-logo" style="font-style:italic">LUCAS GARMENTS</h3>
-            <p class="supplier-desc">Made for the wanderer. Using hypoallergenic organic cotton to create shirts that tell the stories of our 7,641 islands — from Sinulog chants to Palawan's deep waters.</p>
-            <a href="products.html?brand=Lucas Garments" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Lucas Garments</a>
+            <p class="supplier-desc">Made for the wanderer. Using hypoallergenic organic cotton to create shirts that
+              tell the stories of our 7,641 islands — from Sinulog chants to Palawan's deep waters.</p>
+            <a href="products.html?brand=Lucas Garments" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Lucas
+              Garments</a>
           </div>
         </div>
 
-        <!-- Apex Clothing -->
+
         <div class="col-md-6 col-lg-4">
           <div class="supplier-card">
             <h3 class="supplier-logo">APEX CLOTHING</h3>
-            <p class="supplier-desc">Apex Clothing merges surf, skateboard, and jiu-jitsu culture. It’s an island-inspired streetwear brand built for the lifestyle of those who see the world from a different perspective.</p>
-            <a href="products.html?brand=Apex Clothing" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Apex Clothing</a>
+            <p class="supplier-desc">Apex Clothing merges surf, skateboard, and jiu-jitsu culture. It’s an
+              island-inspired streetwear brand built for the lifestyle of those who see the world from a different
+              perspective.</p>
+            <a href="products.html?brand=Apex Clothing" class="btn btn-outline-mcebu btn-sm-mcebu w-100">Shop Apex
+              Clothing</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+
   <footer class="footer-mcebu">
     <div class="container">
       <div class="footer-bottom">&copy; 2026 MadeInUbec. All rights reserved.</div>
@@ -104,8 +132,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../js/cart.js"></script>
+  <script src="../data/products.js"></script>
   <script src="../js/app.js"></script>
 </body>
+
 </html>
-
-
