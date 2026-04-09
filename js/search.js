@@ -3,6 +3,8 @@
 
 window.initSearch = initSearch;
 
+
+// this function is for initializing the search functionality
 function initSearch(onSearchChange) {
   const searchInput = document.getElementById('searchInput');
   if (!searchInput) return;

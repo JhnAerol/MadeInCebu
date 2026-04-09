@@ -3,6 +3,8 @@
 let productsData = [];
 
 
+
+// this function is for showing toast notifications
 window.showToast = function (msg) {
   const toast = document.getElementById('toastNotif');
   const msgEl = document.getElementById('toastMsg');
@@ -13,6 +15,8 @@ window.showToast = function (msg) {
 };
 
 
+
+// this part is for handling navbar style on scroll
 window.addEventListener('scroll', () => {
   const nav = document.getElementById('mainNav');
   if (nav) {
@@ -21,6 +25,8 @@ window.addEventListener('scroll', () => {
   }
 });
 
+
+// this function is for fetching product data
 async function fetchProducts() {
   showSkeletons();
   try {
@@ -50,6 +56,8 @@ async function fetchProducts() {
 }
 
 
+
+// this function is for generating a product card HTML
 function generateProductCard(product, index) {
 
   const productId = index;
@@ -92,6 +100,8 @@ function generateProductCard(product, index) {
 }
 
 
+
+// this function is for generating a skeleton loader card
 function generateSkeletonCard() {
   return `
     <div class="col-sm-6 col-lg-4 d-flex align-items-stretch">
@@ -109,6 +119,8 @@ function generateSkeletonCard() {
 }
 
 
+
+// this function is for generating detail skeleton loader
 function generateDetailSkeleton() {
   return `
     <div class="col-lg-6">
@@ -130,6 +142,8 @@ function generateDetailSkeleton() {
 }
 
 
+
+// this function is for initializing page-specific logic
 function initPage() {
   const path = window.location.pathname;
 
@@ -147,6 +161,8 @@ function initPage() {
   if (window.initCartSystem) window.initCartSystem();
 }
 
+
+// this function is for showing skeleton loaders
 function showSkeletons() {
   const featured = document.getElementById('featuredProducts');
   const grid = document.getElementById('productGrid');
@@ -165,6 +181,8 @@ function showSkeletons() {
   }
 }
 
+
+// this function is for initializing the home page
 function initHome() {
   const featuredContainer = document.getElementById('featuredProducts');
   if (!featuredContainer) return;
@@ -178,6 +196,8 @@ function initHome() {
   featuredContainer.innerHTML = featuredHTML;
 }
 
+
+// this function is for initializing the product details page
 function initProductDetail() {
   const urlParams = new URLSearchParams(window.location.search);
   const productId = parseInt(urlParams.get('id'));
@@ -310,6 +330,8 @@ function initProductDetail() {
   loadReviews(productId);
 }
 
+
+// this function is for loading product reviews
 function loadReviews(productId) {
   const reviewsList = document.getElementById('reviewsList');
   const reviewsJSON = localStorage.getItem(`mcebu_reviews_${productId}`);
@@ -353,6 +375,8 @@ function loadReviews(productId) {
   }
 }
 
+
+// this function is for rendering reviews to the container
 function renderReviews(reviews, container) {
   if (reviews.length === 0) {
     container.innerHTML = `<p class="text-secondary">No reviews yet. Be the first to review!</p>`;

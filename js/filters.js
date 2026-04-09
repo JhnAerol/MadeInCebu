@@ -5,6 +5,8 @@ window.initProducts = initProducts;
 
 let filteredProducts = [];
 
+
+// this function is for initializing the product filtering system
 function initProducts() {
   const grid = document.getElementById('productGrid');
   if (!grid) return;
@@ -72,6 +74,8 @@ function initProducts() {
   runFilters();
 }
 
+
+// this function is for running the filters and updating the display
 function runFilters() {
   const grid = document.getElementById('productGrid');
   const countDisplay = document.getElementById('resultCount');

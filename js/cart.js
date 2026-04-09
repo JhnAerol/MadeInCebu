@@ -8,6 +8,8 @@ window.addToCart = addToCart;
 window.removeFromCart = removeFromCart;
 window.updateCartQty = updateCartQty;
 
+
+// this function is for initializing the cart system
 function initCartSystem() {
   updateCartUI();
 
@@ -17,12 +19,16 @@ function initCartSystem() {
   const overlay = document.getElementById('cartOverlay');
   const drawer = document.getElementById('cartDrawer');
 
+
+  // this function is for opening the cart drawer
   function openCart(e) {
     if (e) e.preventDefault();
     drawer?.classList.add('open');
     overlay?.classList.add('open');
   }
 
+
+  // this function is for closing the cart drawer
   function closeCart() {
     drawer?.classList.remove('open');
     overlay?.classList.remove('open');
@@ -36,6 +42,8 @@ function initCartSystem() {
   window.openCartDrawer = openCart;
 }
 
+
+// this function is for adding items to the cart
 function addToCart(productId, qty = 1, size = '') {
   const product = productsData[productId];
   if (!product) return;
@@ -84,6 +92,8 @@ function addToCart(productId, qty = 1, size = '') {
   if (window.openCartDrawer) window.openCartDrawer();
 }
 
+
+// this function is for removing items from the cart
 function removeFromCart(index) {
   cart.splice(index, 1);
   saveCart();
@@ -94,6 +104,8 @@ function removeFromCart(index) {
   }
 }
 
+
+// this function is for updating item quantity in the cart
 function updateCartQty(index, change) {
   const item = cart[index];
   const newQty = item.qty + change;
@@ -111,10 +123,14 @@ function updateCartQty(index, change) {
   }
 }
 
+
+// this function is for saving cart data to local storage
 function saveCart() {
   localStorage.setItem('mcebu_cart', JSON.stringify(cart));
 }
 
+
+// this function is for updating the cart user interface
 function updateCartUI() {
   const badge = document.getElementById('cartBadge');
   const itemsContainer = document.getElementById('cartItems');
@@ -164,6 +180,8 @@ function updateCartUI() {
 }
 
 
+
+// this function is for initializing the checkout page logic
 window.initCheckout = function () {
   window.renderCheckoutItems = renderCheckoutItems;
   renderCheckoutItems();
@@ -200,6 +218,8 @@ window.initCheckout = function () {
   }
 }
 
+
+// this function is for rendering items in the checkout summary
 function renderCheckoutItems() {
   const container = document.getElementById('checkoutItems');
   const subtotalEl = document.getElementById('checkoutSubtotal');

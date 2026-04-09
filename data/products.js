@@ -121,7 +121,7 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Premium Plains - Mocha",
+    "name": "Premium Plains - Mocha",
     "price": "₱799.00",
     "description": "Mocha is the ultimate rich neutral. Deep, earthy, and warm — it elevates any rotation with a sophisticated, chocolate-toned aesthetic. Constructed from 300GSM Premium CVC Blend for a substantial weight that holds its architectural shape while providing a smooth, breathable finish.",
     "details": {
@@ -142,7 +142,7 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Box Tee Two Liner - Phantom Black (French Terry)",
+    "name": "Box Tee Two Liner - Phantom Black (French Terry)",
     "price": "₱999.00",
     "description": "The evolution of the dark-mode essential. This Box Tee in Phantom Black offers rich, matte depth with a stealth aesthetic and high-end tactile edge. Constructed from premium French Terry with a signature looped interior for breathable yet substantial feel and architectural drape.",
     "details": {
@@ -163,7 +163,7 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA French Terry Plain - Cloud White",
+    "name": "French Terry Plain - Cloud White",
     "price": "₱999.00",
     "description": "Cloud White is simplicity done right. Fresh, minimal, and easy to wear — it gives you that clean, put-together look without overthinking your outfit. Made with breathable 300GSM French terry, it feels soft yet structured for all-day wear.",
     "details": {
@@ -173,7 +173,7 @@ window.productsData = [
         "Durable Neckline — stretch-resistant ribbing with 6% spandex",
         "Quick-Drying Tech — stays fresh all day",
         "Shrink-Free + Reinforced Stitching — long-term quality",
-        "UA Signature Label — clean, professional finish"
+        "Signature Label — clean, professional finish"
       ],
       "sizes": ["S", "M", "L", "XL", "2XL"],
       "madeIn": "Philippines"
@@ -184,7 +184,7 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Premium Plains - Light Grey",
+    "name": "Premium Plains - Light Grey",
     "price": "₱799.00",
     "description": "Light Grey is the ultimate middle ground — the 'any-weather' shade that bridges the gap between bold and basic. Constructed from 300GSM CVC with a smooth, high-density finish that feels substantial yet remains breathable.",
     "details": {
@@ -205,7 +205,7 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA French Terry Plain - Phantom Black",
+    "name": "French Terry Plain - Phantom Black",
     "price": "₱999.00",
     "description": "Phantom Black is built for presence. The structured heavyweight fabric sharpens your silhouette — clean, powerful, and intentional. Engineered with premium 300GSM French terry for a solid drape that holds its shape all day.",
     "details": {
@@ -215,7 +215,7 @@ window.productsData = [
         "Shape-Retaining Collar — reinforced with 6% spandex",
         "Quick-Dry Comfort — stays fresh from day to night",
         "Built to Last — double-needle stitching + shrink-free finish",
-        "UA Signature Label — minimal, elevated branding"
+        "Signature Label — minimal, elevated branding"
       ],
       "sizes": ["S", "M", "L", "XL", "2XL"],
       "madeIn": "Philippines"
@@ -226,7 +226,7 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Prime Shirt - FCO White",
+    "name": "Prime Shirt - FCO White",
     "price": "₱1,699.00",
     "description": "PRIME F.C.O. White is the definitive clean slate — a crisp, high-brightness white that commands attention through sheer simplicity. The ultimate streetwear power move with a sharp, clinical aesthetic. Ethically produced in Cebu City.",
     "details": {
@@ -569,9 +569,9 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Prime FCO Sweatpants - Black",
+    "name": "Prime FCO Sweatpants - Black",
     "price": "₱2,999.00",
-    "description": "Premium fleece, cursive FCO detailing, UA label. Dark collector luxury streetwear bottoms. Complete the set.",
+    "description": "Premium fleece, cursive FCO detailing, label. Dark collector luxury streetwear bottoms. Complete the set.",
     "details": {
       "fit": "Standard",
       "fabric": "Premium Fleece",
@@ -584,9 +584,9 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Prime FCO Sweatpants - White",
+    "name": "Prime FCO Sweatpants - White",
     "price": "₱2,999.00",
-    "description": "Premium fleece, cursive FCO branding, UA signature label. Collector's luxury streetwear bottom.",
+    "description": "Premium fleece, cursive FCO branding, signature label. Collector's luxury streetwear bottom.",
     "details": {
       "fit": "Standard",
       "fabric": "Premium Fleece",
@@ -599,13 +599,13 @@ window.productsData = [
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Prime FCO Hoodie - Black",
+    "name": "Prime FCO Hoodie - Black",
     "price": "₱3,999.00",
-    "description": "Premium fleece, cursive FCO detailing, UA signature label. Dark collector's luxury streetwear hoodie.",
+    "description": "Premium fleece, cursive FCO detailing, signature label. Dark collector's luxury streetwear hoodie.",
     "details": {
       "fit": "Relaxed drop-shoulder cut",
       "fabric": "Premium heavyweight fleece",
-      "features": ["Cursive FCO embroidery", "Rubber-patched UA logo"],
+      "features": ["Cursive FCO embroidery", "Rubber-patched logo"],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-prime-hoodie-f-c-o-black",

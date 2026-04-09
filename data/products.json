@@ -13,7 +13,14 @@
       "productCode": "990813",
       "sizing": "Fits true to size, take your normal size",
       "care": "Wash according to care label attached",
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
     },
     "link": "https://www.penshoppe.com/products/follow-no-crowd-relaxed-t-shirt-990813-bone",
     "image": "https://cdn.shopify.com/s/files/1/2282/7539/files/990813-Bone_3.jpg?v=1772759613",
@@ -33,7 +40,14 @@
       "productCode": "990813",
       "sizing": "Fits true to size, take your normal size",
       "care": "Wash according to care label attached",
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
     },
     "link": "https://www.penshoppe.com/products/follow-no-crowd-relaxed-t-shirt-990813-heather-gray",
     "image": "https://cdn.shopify.com/s/files/1/2282/7539/files/990813-Heather-Gray_3.jpg",
@@ -53,7 +67,13 @@
       "productCode": "986605",
       "sizing": "Fits true to size, take your normal size",
       "care": "Wash according to care label attached",
-      "sizes": ["XS", "S", "M", "L", "XL"]
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     "link": "https://www.penshoppe.com/products/follow-no-crowd-relaxed-fit-graphic-t-shirt-986605-black",
     "image": "https://cdn.shopify.com/s/files/1/2282/7539/files/986605-Black_2.jpg?v=1746599171",
@@ -73,7 +93,13 @@
       "productCode": "986605",
       "sizing": "Fits true to size, take your normal size",
       "care": "Wash according to care label attached",
-      "sizes": ["XS", "S", "M", "L", "XL"]
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ]
     },
     "link": "https://www.penshoppe.com/products/follow-no-crowd-relaxed-fit-graphic-t-shirt-986605-sand",
     "image": "https://cdn.shopify.com/s/files/1/2282/7539/files/986605-Sand_2.jpg",
@@ -93,7 +119,14 @@
       "productCode": "990813",
       "sizing": "Fits true to size, take your normal size",
       "care": "Wash according to care label attached",
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
     },
     "link": "https://www.penshoppe.com/products/follow-no-crowd-relaxed-fit-t-shirt-990813-off-white",
     "image": "https://cdn.shopify.com/s/files/1/2282/7539/files/990813-Off_White_4.jpg?v=1759290528",
@@ -113,7 +146,14 @@
       "productCode": "990813",
       "sizing": "Fits true to size, take your normal size",
       "care": "Wash according to care label attached",
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"]
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ]
     },
     "link": "https://www.penshoppe.com/products/follow-no-crowd-relaxed-fit-t-shirt-990813-taupe",
     "image": "https://cdn.shopify.com/s/files/1/2282/7539/files/990813-Taupe_4.jpg",
@@ -121,7 +161,7 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Premium Plains - Mocha",
+    "name": "Premium Plains - Mocha",
     "price": "₱799.00",
     "description": "Mocha is the ultimate rich neutral. Deep, earthy, and warm — it elevates any rotation with a sophisticated, chocolate-toned aesthetic. Constructed from 300GSM Premium CVC Blend for a substantial weight that holds its architectural shape while providing a smooth, breathable finish.",
     "details": {
@@ -133,7 +173,13 @@
         "Shrink-Free Performance — pre-treated for consistent silhouette",
         "Deep Mocha Hue — pairs effortlessly with creams, blacks, and neutrals"
       ],
-      "sizes": ["S", "M", "L", "XL", "2XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-premium-plains-mocha",
@@ -142,7 +188,7 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Box Tee Two Liner - Phantom Black (French Terry)",
+    "name": "Box Tee Two Liner - Phantom Black (French Terry)",
     "price": "₱999.00",
     "description": "The evolution of the dark-mode essential. This Box Tee in Phantom Black offers rich, matte depth with a stealth aesthetic and high-end tactile edge. Constructed from premium French Terry with a signature looped interior for breathable yet substantial feel and architectural drape.",
     "details": {
@@ -154,7 +200,13 @@
         "Architectural Drape — holds boxy shape through movement",
         "Shrink-Free Performance — pre-treated for consistent BOX proportions"
       ],
-      "sizes": ["S", "M", "L", "XL", "2XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-box-tee-two-liner-phantom-black-french-terry-variant",
@@ -163,7 +215,7 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA French Terry Plain - Cloud White",
+    "name": "French Terry Plain - Cloud White",
     "price": "₱999.00",
     "description": "Cloud White is simplicity done right. Fresh, minimal, and easy to wear — it gives you that clean, put-together look without overthinking your outfit. Made with breathable 300GSM French terry, it feels soft yet structured for all-day wear.",
     "details": {
@@ -173,9 +225,15 @@
         "Durable Neckline — stretch-resistant ribbing with 6% spandex",
         "Quick-Drying Tech — stays fresh all day",
         "Shrink-Free + Reinforced Stitching — long-term quality",
-        "UA Signature Label — clean, professional finish"
+        "Signature Label — clean, professional finish"
       ],
-      "sizes": ["S", "M", "L", "XL", "2XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-french-terry-plain-cloud-white",
@@ -184,7 +242,7 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Premium Plains - Light Grey",
+    "name": "Premium Plains - Light Grey",
     "price": "₱799.00",
     "description": "Light Grey is the ultimate middle ground — the 'any-weather' shade that bridges the gap between bold and basic. Constructed from 300GSM CVC with a smooth, high-density finish that feels substantial yet remains breathable.",
     "details": {
@@ -196,7 +254,13 @@
         "Shrink-Free Performance — fit remains consistent and true to size",
         "Ultimate Versatility — pairs with denim, joggers, or layering pieces"
       ],
-      "sizes": ["S", "M", "L", "XL", "2XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-premium-plains-light-grey",
@@ -205,7 +269,7 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA French Terry Plain - Phantom Black",
+    "name": "French Terry Plain - Phantom Black",
     "price": "₱999.00",
     "description": "Phantom Black is built for presence. The structured heavyweight fabric sharpens your silhouette — clean, powerful, and intentional. Engineered with premium 300GSM French terry for a solid drape that holds its shape all day.",
     "details": {
@@ -215,9 +279,15 @@
         "Shape-Retaining Collar — reinforced with 6% spandex",
         "Quick-Dry Comfort — stays fresh from day to night",
         "Built to Last — double-needle stitching + shrink-free finish",
-        "UA Signature Label — minimal, elevated branding"
+        "Signature Label — minimal, elevated branding"
       ],
-      "sizes": ["S", "M", "L", "XL", "2XL"],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-french-terry-plain-phantom-black",
@@ -226,7 +296,7 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Prime Shirt - FCO White",
+    "name": "Prime Shirt - FCO White",
     "price": "₱1,699.00",
     "description": "PRIME F.C.O. White is the definitive clean slate — a crisp, high-brightness white that commands attention through sheer simplicity. The ultimate streetwear power move with a sharp, clinical aesthetic. Ethically produced in Cebu City.",
     "details": {
@@ -238,7 +308,15 @@
         "Local Craftsmanship — ethically produced in Cebu City",
         "Shrink-Free Performance — oversized proportions stay intact wash after wash"
       ],
-      "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
       "madeIn": "Cebu City, Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-prime-shirt-f-c-o-white",
@@ -255,7 +333,14 @@
       "material": "100% Cotton",
       "collar": "Ribknit Collar",
       "print": "High Quality Print",
-      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ]
     },
     "link": "https://strapcebu.com/products/strap-basalt-tee-logo-moss-green",
     "image": "https://cdn.shopify.com/s/files/1/0649/1389/9718/files/MOSSSTONEFRONT.jpg?v=1770357785",
@@ -271,7 +356,14 @@
       "material": "100% Cotton",
       "collar": "Ribknit Collar",
       "print": "High Quality Print",
-      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ]
     },
     "link": "https://strapcebu.com/products/strap-ballin-tee-black",
     "image": "https://cdn.shopify.com/s/files/1/0649/1389/9718/files/BALLIN_FRONT.jpg?v=1773551704",
@@ -287,7 +379,14 @@
       "material": "100% Cotton",
       "collar": "Ribknit Collar",
       "print": "High Quality Print",
-      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ]
     },
     "link": "https://strapcebu.com/products/strap-bubble-tee-logo-lilac",
     "image": "https://cdn.shopify.com/s/files/1/0649/1389/9718/files/LILACFRONT.jpg",
@@ -303,7 +402,14 @@
       "material": "100% Cotton",
       "collar": "Ribknit Collar",
       "print": "High Quality Print",
-      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ]
     },
     "link": "https://strapcebu.com/products/strap-divine-logo-tee-black",
     "image": "https://cdn.shopify.com/s/files/1/0649/1389/9718/files/DIVINEFRONT.jpg",
@@ -319,7 +425,14 @@
       "material": "100% Cotton",
       "collar": "Ribknit Collar",
       "print": "High Quality Print",
-      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ]
     },
     "link": "https://strapcebu.com/products/strap-flux-tee-logo-white",
     "image": "https://cdn.shopify.com/s/files/1/0649/1389/9718/files/FLUXFRONT.jpg",
@@ -334,7 +447,14 @@
       "fit": "Loose Fit",
       "material": "100% Cotton",
       "collar": "Ribknit Collar",
-      "sizes": ["S", "M", "L", "XL", "2XL", "3XL"]
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ]
     },
     "link": "https://strapcebu.com/products/strap-yinyang-frog-maroon",
     "image": "https://cdn.shopify.com/s/files/1/0649/1389/9718/files/YINYANGFROGFRONT.jpg",
@@ -354,8 +474,23 @@
         "Locally made, crafted in Cebu"
       ],
       "care": "Machine wash cold, inside out, with like colors. Do not bleach. Tumble dry low or hang dry.",
-      "colors": ["Black", "White", "Blue", "Navy Blue", "Dusky Rose", "Cocoa"],
-      "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+      "colors": [
+        "Black",
+        "White",
+        "Blue",
+        "Navy Blue",
+        "Dusky Rose",
+        "Cocoa"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://suroywear.com/collections/the-island-series/products/island-series-7641-islands-tee",
@@ -376,8 +511,19 @@
         "Locally made, crafted in Cebu"
       ],
       "care": "Machine wash cold, inside out, with like colors. Do not bleach. Tumble dry low or hang dry.",
-      "colors": ["White", "Black"],
-      "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+      "colors": [
+        "White",
+        "Black"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://suroywear.com/collections/the-island-series/products/island-series-palawan-above-below-tee",
@@ -398,8 +544,20 @@
         "Locally made, crafted in Cebu"
       ],
       "care": "Machine wash cold, inside out, with like colors. Do not bleach. Tumble dry low or hang dry.",
-      "colors": ["White", "Black", "Blue"],
-      "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+      "colors": [
+        "White",
+        "Black",
+        "Blue"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://suroywear.com/collections/the-island-series/products/island-series-cebu-whale-shark-tee",
@@ -420,8 +578,20 @@
         "Locally made, crafted in Cebu"
       ],
       "care": "Machine wash cold, inside out, with like colors. Do not bleach. Tumble dry low or hang dry.",
-      "colors": ["Black", "White", "Serenity Blue"],
-      "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+      "colors": [
+        "Black",
+        "White",
+        "Serenity Blue"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://suroywear.com/products/statement-tee-padayon-shirt",
@@ -443,9 +613,24 @@
         "Locally made, crafted in Cebu"
       ],
       "care": "Wash inside out, cold wash. Hang dry. Avoid ironing directly on print.",
-      "variants": ["VIVA PIT SEÃ‘OR! (Devotion)", "PRITITIT! (Street Dance)", "ISYAGIT UG KUSOG! (Street Party)", "SINULOG (Classic)"],
-      "colors": ["White", "Midnight Black"],
-      "sizes": ["XS", "S", "M", "L", "XL", "2XL"],
+      "variants": [
+        "VIVA PIT SEÃ‘OR! (Devotion)",
+        "PRITITIT! (Street Dance)",
+        "ISYAGIT UG KUSOG! (Street Party)",
+        "SINULOG (Classic)"
+      ],
+      "colors": [
+        "White",
+        "Midnight Black"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://suroywear.com/collections/all/products/sinulog-vibes-tee-choose-your-chant",
@@ -466,8 +651,19 @@
         "Locally made, crafted in Cebu"
       ],
       "care": "Machine wash cold, inside out, with like colors. Do not bleach. Tumble dry low or hang dry.",
-      "colors": ["White", "Midnight Black"],
-      "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+      "colors": [
+        "White",
+        "Midnight Black"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://suroywear.com/collections/bestsellers/products/puhon-tee",
@@ -482,7 +678,15 @@
     "details": {
       "fit": "Standard Fit",
       "type": "Graphic T-Shirt",
-      "sizes": ["XS", "S", "M", "L", "XL", "2XL", "3XL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "2XL",
+        "3XL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://www.hghrclss.life/products/taga-isla-v2",
@@ -497,7 +701,15 @@
     "details": {
       "fit": "Standard Fit",
       "type": "Graphic T-Shirt",
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://www.hghrclss.life/products/perspective",
@@ -512,8 +724,21 @@
     "details": {
       "fit": "Standard Fit",
       "type": "Graphic T-Shirt",
-      "themes": ["Surf", "Skateboard", "Jiu Jitsu", "Island Lifestyle"],
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      "themes": [
+        "Surf",
+        "Skateboard",
+        "Jiu Jitsu",
+        "Island Lifestyle"
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://www.hghrclss.life/products/way-of-life",
@@ -528,7 +753,15 @@
     "details": {
       "fit": "Standard Fit",
       "type": "Graphic T-Shirt",
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://www.hghrclss.life/products/copy-of-connect",
@@ -544,7 +777,15 @@
     "details": {
       "fit": "Standard Fit",
       "type": "Graphic T-Shirt",
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL", "XXXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL",
+        "XXXL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://www.hghrclss.life/products/grateful",
@@ -560,7 +801,14 @@
     "details": {
       "fit": "Standard Fit",
       "type": "Graphic T-Shirt",
-      "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
       "madeIn": "Cebu, Philippines"
     },
     "link": "https://www.hghrclss.life/products/ganja",
@@ -569,13 +817,15 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Prime FCO Sweatpants - Black",
+    "name": "Prime FCO Sweatpants - Black",
     "price": "₱2,999.00",
-    "description": "Premium fleece, cursive FCO detailing, UA label. Dark collector luxury streetwear bottoms. Complete the set.",
+    "description": "Premium fleece, cursive FCO detailing, label. Dark collector luxury streetwear bottoms. Complete the set.",
     "details": {
       "fit": "Standard",
       "fabric": "Premium Fleece",
-      "features": ["Cursive FCO detailing"],
+      "features": [
+        "Cursive FCO detailing"
+      ],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-prime-f-c-o-sweat-pants-black",
@@ -584,13 +834,15 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Prime FCO Sweatpants - White",
+    "name": "Prime FCO Sweatpants - White",
     "price": "₱2,999.00",
-    "description": "Premium fleece, cursive FCO branding, UA signature label. Collector's luxury streetwear bottom.",
+    "description": "Premium fleece, cursive FCO branding, signature label. Collector's luxury streetwear bottom.",
     "details": {
       "fit": "Standard",
       "fabric": "Premium Fleece",
-      "features": ["Cursive FCO branding"],
+      "features": [
+        "Cursive FCO branding"
+      ],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-prime-f-c-o-sweat-pants-white",
@@ -599,13 +851,16 @@
   },
   {
     "brand": "Five Colors Apparel",
-    "name": "UA Prime FCO Hoodie - Black",
+    "name": "Prime FCO Hoodie - Black",
     "price": "₱3,999.00",
-    "description": "Premium fleece, cursive FCO detailing, UA signature label. Dark collector's luxury streetwear hoodie.",
+    "description": "Premium fleece, cursive FCO detailing, signature label. Dark collector's luxury streetwear hoodie.",
     "details": {
       "fit": "Relaxed drop-shoulder cut",
       "fabric": "Premium heavyweight fleece",
-      "features": ["Cursive FCO embroidery", "Rubber-patched UA logo"],
+      "features": [
+        "Cursive FCO embroidery",
+        "Rubber-patched logo"
+      ],
       "madeIn": "Philippines"
     },
     "link": "https://www.uaworldwide.com/products/ua-prime-hoodie-f-c-o-black",
@@ -643,5 +898,3 @@
     "stock": 10
   }
 ]
-
-
